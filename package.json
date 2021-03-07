@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "express": "^4.17.1",
+    "mocha": "^8.3.1",
+    "morgan": "^1.9.0",
+    "promise.prototype.finally": "^3.1.0",
+    "sequelize": "^6.3.4",
+    "sqlite3": "^5.0.2"
+  },
+  "name": "ongo",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  },
+  "scripts": {
+    "start": "nodemon ./app.js",
+    "seed": "cross-env DB_ENABLE_LOGGING=true node './seed'",
+    "test": "mocha --recursive --exist"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

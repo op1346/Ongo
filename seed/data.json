@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "firstName": "Joe",
+      "lastName": "Smith",
+      "emailAddress": "joe@smith.com",
+      "password": "joepassword",
+      "isAdmin": true,
+      "followingPosts": []
+    },
+    {
+      "firstName": "Sally",
+      "lastName": "Jones",
+      "emailAddress": "sally@jones.com",
+      "password": "sallypassword",
+      "isAdmin": false,
+      "followingPosts": [1]
+    }
+  ],
+  "tasks": [
+    {
+      "userId": 1,
+      "taskCompleted": false,
+      "title": "Build a Basic Bookcase",
+      "followedBy": []
+    },
+    {
+      "userId": 2,
+      "taskCompleted": true,
+      "title": "Learn How to Program",
+      "followedBy": [1]
+    },
+    {
+      "userId": 2,
+      "taskCompleted": false,
+      "title": "Learn How to Test Programs",
+      "followedBy": []
+    }
+  ]
+}
